@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44D665181EE529A100C4F2DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D665171EE529A100C4F2DB /* AppDelegate.swift */; };
+		44D6651A1EE529A100C4F2DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D665191EE529A100C4F2DB /* ViewController.swift */; };
+		44D6651D1EE529A100C4F2DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D6651B1EE529A100C4F2DB /* Main.storyboard */; };
+		44D6651F1EE529A100C4F2DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D6651E1EE529A100C4F2DB /* Assets.xcassets */; };
+		44D665221EE529A100C4F2DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D665201EE529A100C4F2DB /* LaunchScreen.storyboard */; };
+		44D6652D1EE529A100C4F2DB /* NHKViewerForiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D6652C1EE529A100C4F2DB /* NHKViewerForiOSTests.swift */; };
+		44D665381EE529A100C4F2DB /* NHKViewerForiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D665371EE529A100C4F2DB /* NHKViewerForiOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44D665291EE529A100C4F2DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44D6650C1EE529A000C4F2DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44D665131EE529A100C4F2DB;
+			remoteInfo = NHKViewerForiOS;
+		};
+		44D665341EE529A100C4F2DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44D6650C1EE529A000C4F2DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44D665131EE529A100C4F2DB;
+			remoteInfo = NHKViewerForiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44D665141EE529A100C4F2DB /* NHKViewerForiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHKViewerForiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D665171EE529A100C4F2DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44D665191EE529A100C4F2DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44D6651C1EE529A100C4F2DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44D6651E1EE529A100C4F2DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44D665211EE529A100C4F2DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44D665231EE529A100C4F2DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44D665281EE529A100C4F2DB /* NHKViewerForiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NHKViewerForiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D6652C1EE529A100C4F2DB /* NHKViewerForiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHKViewerForiOSTests.swift; sourceTree = "<group>"; };
+		44D6652E1EE529A100C4F2DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44D665331EE529A100C4F2DB /* NHKViewerForiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NHKViewerForiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D665371EE529A100C4F2DB /* NHKViewerForiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHKViewerForiOSUITests.swift; sourceTree = "<group>"; };
+		44D665391EE529A100C4F2DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44D665111EE529A100C4F2DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D665251EE529A100C4F2DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D665301EE529A100C4F2DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44D6650B1EE529A000C4F2DB = {
+			isa = PBXGroup;
+			children = (
+				44D665161EE529A100C4F2DB /* NHKViewerForiOS */,
+				44D6652B1EE529A100C4F2DB /* NHKViewerForiOSTests */,
+				44D665361EE529A100C4F2DB /* NHKViewerForiOSUITests */,
+				44D665151EE529A100C4F2DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44D665151EE529A100C4F2DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44D665141EE529A100C4F2DB /* NHKViewerForiOS.app */,
+				44D665281EE529A100C4F2DB /* NHKViewerForiOSTests.xctest */,
+				44D665331EE529A100C4F2DB /* NHKViewerForiOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44D665161EE529A100C4F2DB /* NHKViewerForiOS */ = {
+			isa = PBXGroup;
+			children = (
+				44D665171EE529A100C4F2DB /* AppDelegate.swift */,
+				44D665191EE529A100C4F2DB /* ViewController.swift */,
+				44D6651B1EE529A100C4F2DB /* Main.storyboard */,
+				44D6651E1EE529A100C4F2DB /* Assets.xcassets */,
+				44D665201EE529A100C4F2DB /* LaunchScreen.storyboard */,
+				44D665231EE529A100C4F2DB /* Info.plist */,
+			);
+			path = NHKViewerForiOS;
+			sourceTree = "<group>";
+		};
+		44D6652B1EE529A100C4F2DB /* NHKViewerForiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				44D6652C1EE529A100C4F2DB /* NHKViewerForiOSTests.swift */,
+				44D6652E1EE529A100C4F2DB /* Info.plist */,
+			);
+			path = NHKViewerForiOSTests;
+			sourceTree = "<group>";
+		};
+		44D665361EE529A100C4F2DB /* NHKViewerForiOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				44D665371EE529A100C4F2DB /* NHKViewerForiOSUITests.swift */,
+				44D665391EE529A100C4F2DB /* Info.plist */,
+			);
+			path = NHKViewerForiOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44D665131EE529A100C4F2DB /* NHKViewerForiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44D6653C1EE529A100C4F2DB /* Build configuration list for PBXNativeTarget "NHKViewerForiOS" */;
+			buildPhases = (
+				44D665101EE529A100C4F2DB /* Sources */,
+				44D665111EE529A100C4F2DB /* Frameworks */,
+				44D665121EE529A100C4F2DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NHKViewerForiOS;
+			productName = NHKViewerForiOS;
+			productReference = 44D665141EE529A100C4F2DB /* NHKViewerForiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44D665271EE529A100C4F2DB /* NHKViewerForiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44D6653F1EE529A100C4F2DB /* Build configuration list for PBXNativeTarget "NHKViewerForiOSTests" */;
+			buildPhases = (
+				44D665241EE529A100C4F2DB /* Sources */,
+				44D665251EE529A100C4F2DB /* Frameworks */,
+				44D665261EE529A100C4F2DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44D6652A1EE529A100C4F2DB /* PBXTargetDependency */,
+			);
+			name = NHKViewerForiOSTests;
+			productName = NHKViewerForiOSTests;
+			productReference = 44D665281EE529A100C4F2DB /* NHKViewerForiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44D665321EE529A100C4F2DB /* NHKViewerForiOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44D665421EE529A100C4F2DB /* Build configuration list for PBXNativeTarget "NHKViewerForiOSUITests" */;
+			buildPhases = (
+				44D6652F1EE529A100C4F2DB /* Sources */,
+				44D665301EE529A100C4F2DB /* Frameworks */,
+				44D665311EE529A100C4F2DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44D665351EE529A100C4F2DB /* PBXTargetDependency */,
+			);
+			name = NHKViewerForiOSUITests;
+			productName = NHKViewerForiOSUITests;
+			productReference = 44D665331EE529A100C4F2DB /* NHKViewerForiOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44D6650C1EE529A000C4F2DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = fumiya.gemba;
+				TargetAttributes = {
+					44D665131EE529A100C4F2DB = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					44D665271EE529A100C4F2DB = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 44D665131EE529A100C4F2DB;
+					};
+					44D665321EE529A100C4F2DB = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 44D665131EE529A100C4F2DB;
+					};
+				};
+			};
+			buildConfigurationList = 44D6650F1EE529A000C4F2DB /* Build configuration list for PBXProject "NHKViewerForiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44D6650B1EE529A000C4F2DB;
+			productRefGroup = 44D665151EE529A100C4F2DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44D665131EE529A100C4F2DB /* NHKViewerForiOS */,
+				44D665271EE529A100C4F2DB /* NHKViewerForiOSTests */,
+				44D665321EE529A100C4F2DB /* NHKViewerForiOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44D665121EE529A100C4F2DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D665221EE529A100C4F2DB /* LaunchScreen.storyboard in Resources */,
+				44D6651F1EE529A100C4F2DB /* Assets.xcassets in Resources */,
+				44D6651D1EE529A100C4F2DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D665261EE529A100C4F2DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D665311EE529A100C4F2DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44D665101EE529A100C4F2DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D6651A1EE529A100C4F2DB /* ViewController.swift in Sources */,
+				44D665181EE529A100C4F2DB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D665241EE529A100C4F2DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D6652D1EE529A100C4F2DB /* NHKViewerForiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D6652F1EE529A100C4F2DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D665381EE529A100C4F2DB /* NHKViewerForiOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44D6652A1EE529A100C4F2DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44D665131EE529A100C4F2DB /* NHKViewerForiOS */;
+			targetProxy = 44D665291EE529A100C4F2DB /* PBXContainerItemProxy */;
+		};
+		44D665351EE529A100C4F2DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44D665131EE529A100C4F2DB /* NHKViewerForiOS */;
+			targetProxy = 44D665341EE529A100C4F2DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44D6651B1EE529A100C4F2DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44D6651C1EE529A100C4F2DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44D665201EE529A100C4F2DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44D665211EE529A100C4F2DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44D6653A1EE529A100C4F2DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44D6653B1EE529A100C4F2DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44D6653D1EE529A100C4F2DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NHKViewerForiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gembaf.NHKViewerForiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		44D6653E1EE529A100C4F2DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NHKViewerForiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gembaf.NHKViewerForiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		44D665401EE529A100C4F2DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NHKViewerForiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gembaf.NHKViewerForiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NHKViewerForiOS.app/NHKViewerForiOS";
+			};
+			name = Debug;
+		};
+		44D665411EE529A100C4F2DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NHKViewerForiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gembaf.NHKViewerForiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NHKViewerForiOS.app/NHKViewerForiOS";
+			};
+			name = Release;
+		};
+		44D665431EE529A100C4F2DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = NHKViewerForiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gembaf.NHKViewerForiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NHKViewerForiOS;
+			};
+			name = Debug;
+		};
+		44D665441EE529A100C4F2DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = NHKViewerForiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gembaf.NHKViewerForiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NHKViewerForiOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44D6650F1EE529A000C4F2DB /* Build configuration list for PBXProject "NHKViewerForiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D6653A1EE529A100C4F2DB /* Debug */,
+				44D6653B1EE529A100C4F2DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44D6653C1EE529A100C4F2DB /* Build configuration list for PBXNativeTarget "NHKViewerForiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D6653D1EE529A100C4F2DB /* Debug */,
+				44D6653E1EE529A100C4F2DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		44D6653F1EE529A100C4F2DB /* Build configuration list for PBXNativeTarget "NHKViewerForiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D665401EE529A100C4F2DB /* Debug */,
+				44D665411EE529A100C4F2DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		44D665421EE529A100C4F2DB /* Build configuration list for PBXNativeTarget "NHKViewerForiOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D665431EE529A100C4F2DB /* Debug */,
+				44D665441EE529A100C4F2DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44D6650C1EE529A000C4F2DB /* Project object */;
+}
