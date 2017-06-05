@@ -14,6 +14,7 @@
 		44D665221EE529A100C4F2DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D665201EE529A100C4F2DB /* LaunchScreen.storyboard */; };
 		44D6652D1EE529A100C4F2DB /* NHKViewerForiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D6652C1EE529A100C4F2DB /* NHKViewerForiOSTests.swift */; };
 		44D665381EE529A100C4F2DB /* NHKViewerForiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D665371EE529A100C4F2DB /* NHKViewerForiOSUITests.swift */; };
+		44D665461EE558FF00C4F2DB /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44D665451EE558FF00C4F2DB /* Keys.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		44D665331EE529A100C4F2DB /* NHKViewerForiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NHKViewerForiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D665371EE529A100C4F2DB /* NHKViewerForiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHKViewerForiOSUITests.swift; sourceTree = "<group>"; };
 		44D665391EE529A100C4F2DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44D665451EE558FF00C4F2DB /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				44D6651E1EE529A100C4F2DB /* Assets.xcassets */,
 				44D665201EE529A100C4F2DB /* LaunchScreen.storyboard */,
 				44D665231EE529A100C4F2DB /* Info.plist */,
+				44D665451EE558FF00C4F2DB /* Keys.plist */,
 			);
 			path = NHKViewerForiOS;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D665461EE558FF00C4F2DB /* Keys.plist in Resources */,
 				44D665221EE529A100C4F2DB /* LaunchScreen.storyboard in Resources */,
 				44D6651F1EE529A100C4F2DB /* Assets.xcassets in Resources */,
 				44D6651D1EE529A100C4F2DB /* Main.storyboard in Resources */,
