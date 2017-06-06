@@ -15,6 +15,7 @@
 		44D6652D1EE529A100C4F2DB /* NHKViewerForiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D6652C1EE529A100C4F2DB /* NHKViewerForiOSTests.swift */; };
 		44D665381EE529A100C4F2DB /* NHKViewerForiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D665371EE529A100C4F2DB /* NHKViewerForiOSUITests.swift */; };
 		44D665461EE558FF00C4F2DB /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44D665451EE558FF00C4F2DB /* Keys.plist */; };
+		44D665491EE63E4100C4F2DB /* Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D665481EE63E4100C4F2DB /* Mapper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		44D665371EE529A100C4F2DB /* NHKViewerForiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHKViewerForiOSUITests.swift; sourceTree = "<group>"; };
 		44D665391EE529A100C4F2DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44D665451EE558FF00C4F2DB /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		44D665481EE63E4100C4F2DB /* Mapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapper.framework; path = Carthage/Build/iOS/Mapper.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D665491EE63E4100C4F2DB /* Mapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				44D6652B1EE529A100C4F2DB /* NHKViewerForiOSTests */,
 				44D665361EE529A100C4F2DB /* NHKViewerForiOSUITests */,
 				44D665151EE529A100C4F2DB /* Products */,
+				44D665471EE63E4100C4F2DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +132,14 @@
 			path = NHKViewerForiOSUITests;
 			sourceTree = "<group>";
 		};
+		44D665471EE63E4100C4F2DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D665481EE63E4100C4F2DB /* Mapper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +150,7 @@
 				44D665101EE529A100C4F2DB /* Sources */,
 				44D665111EE529A100C4F2DB /* Frameworks */,
 				44D665121EE529A100C4F2DB /* Resources */,
+				44D6654A1EE63E6B00C4F2DB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -257,6 +270,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44D6654A1EE63E6B00C4F2DB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Mapper.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		44D665101EE529A100C4F2DB /* Sources */ = {
@@ -418,6 +448,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NHKViewerForiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gembaf.NHKViewerForiOS;
@@ -430,6 +464,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NHKViewerForiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gembaf.NHKViewerForiOS;
