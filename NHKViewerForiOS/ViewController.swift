@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         let dict = NSDictionary(contentsOfFile: keyFilePath)!
         let apiKey = dict["API_KEY"] as? String
         
-        let endpoint = "http://api.nhk.or.jp/v2/pg/list/130/g1/2017-06-05.json?key=" + apiKey!
+        let endpoint = "http://api.nhk.or.jp/v2/pg/list/130/g1/2017-06-06.json?key=" + apiKey!
         guard let url = URL(string: endpoint) else { return }
         
         let request = URLRequest(url: url)
@@ -27,8 +27,10 @@ class ViewController: UIViewController {
         let session = URLSession(configuration: config)
         
         let task = session.dataTask(with: request) { data, response, error in
-            let result = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)!
-            print(result)
+            do {
+              let json = try JSONSerialization.jsonObject(with: data!)
+              print(json)
+            } catch {}
         }
         task.resume()
     }
