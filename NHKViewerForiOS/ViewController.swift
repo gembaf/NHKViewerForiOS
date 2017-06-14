@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         let dict = NSDictionary(contentsOfFile: keyFilePath)!
         let apiKey = dict["API_KEY"] as? String
         
-        let endpoint = "http://api.nhk.or.jp/v2/pg/list/130/g1/2017-06-06.json?key=" + apiKey!
+        let endpoint = "http://api.nhk.or.jp/v2/pg/list/130/g1/2017-06-14.json?key=" + apiKey!
         guard let url = URL(string: endpoint) else { return }
         
         let request = URLRequest(url: url)
@@ -28,9 +28,12 @@ class ViewController: UIViewController {
         
         let task = session.dataTask(with: request) { data, response, error in
             do {
-              let json = try JSONSerialization.jsonObject(with: data!)
-              print(json)
+                let json = try JSONSerialization.jsonObject(with: data!) as? NSDictionary
+                let nsdict = ((json!["list"] as! NSDictionary)["g1"] as! NSArray)[0] as! NSDictionary
+                let program = ProgramEntity.from(nsdict)
+                print(program!.id)
             } catch {}
+            
         }
         task.resume()
     }

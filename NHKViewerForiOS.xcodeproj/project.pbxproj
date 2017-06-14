@@ -15,7 +15,7 @@
 		44D6652D1EE529A100C4F2DB /* NHKViewerForiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D6652C1EE529A100C4F2DB /* NHKViewerForiOSTests.swift */; };
 		44D665381EE529A100C4F2DB /* NHKViewerForiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D665371EE529A100C4F2DB /* NHKViewerForiOSUITests.swift */; };
 		44D665461EE558FF00C4F2DB /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44D665451EE558FF00C4F2DB /* Keys.plist */; };
-		44D665491EE63E4100C4F2DB /* Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D665481EE63E4100C4F2DB /* Mapper.framework */; };
+		44D6654C1EE6409000C4F2DB /* ProgramEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D6654B1EE6409000C4F2DB /* ProgramEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +51,8 @@
 		44D665391EE529A100C4F2DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44D665451EE558FF00C4F2DB /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		44D665481EE63E4100C4F2DB /* Mapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapper.framework; path = Carthage/Build/iOS/Mapper.framework; sourceTree = "<group>"; };
+		44D6654B1EE6409000C4F2DB /* ProgramEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramEntity.swift; sourceTree = "<group>"; };
+		44D6654F1EE8F9AA00C4F2DB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44D665491EE63E4100C4F2DB /* Mapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +111,7 @@
 				44D665201EE529A100C4F2DB /* LaunchScreen.storyboard */,
 				44D665231EE529A100C4F2DB /* Info.plist */,
 				44D665451EE558FF00C4F2DB /* Keys.plist */,
+				44D6654B1EE6409000C4F2DB /* ProgramEntity.swift */,
 			);
 			path = NHKViewerForiOS;
 			sourceTree = "<group>";
@@ -135,6 +137,7 @@
 		44D665471EE63E4100C4F2DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44D6654F1EE8F9AA00C4F2DB /* SwiftyJSON.framework */,
 				44D665481EE63E4100C4F2DB /* Mapper.framework */,
 			);
 			name = Frameworks;
@@ -295,6 +298,7 @@
 			files = (
 				44D6651A1EE529A100C4F2DB /* ViewController.swift in Sources */,
 				44D665181EE529A100C4F2DB /* AppDelegate.swift in Sources */,
+				44D6654C1EE6409000C4F2DB /* ProgramEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +553,7 @@
 				44D6653E1EE529A100C4F2DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44D6653F1EE529A100C4F2DB /* Build configuration list for PBXNativeTarget "NHKViewerForiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +562,7 @@
 				44D665411EE529A100C4F2DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44D665421EE529A100C4F2DB /* Build configuration list for PBXNativeTarget "NHKViewerForiOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +571,7 @@
 				44D665441EE529A100C4F2DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
