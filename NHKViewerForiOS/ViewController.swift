@@ -28,12 +28,11 @@ class ViewController: UIViewController {
         
         let task = session.dataTask(with: request) { data, response, error in
             do {
-                let json = try JSONSerialization.jsonObject(with: data!) as? NSDictionary
-                let nsdict = ((json!["list"] as! NSDictionary)["g1"] as! NSArray)[0] as! NSDictionary
-                let program = ProgramEntity.from(nsdict)
-                print(program!.id)
+                let json = try JSONSerialization.jsonObject(with: data!) as! NSDictionary
+                let list = json["list"] as! NSDictionary
+                let programList = ProgramListEntity.from(list)
+                print(programList?.programs.first?.start_time)
             } catch {}
-            
         }
         task.resume()
     }
