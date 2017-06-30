@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         APIClient.programEntities(
-            strDate: "2017-06-14",
+            strDate: "2017-06-30",
             completionHandler: { data, response, error in
                 do {
                     let json = try JSONSerialization.jsonObject(with: data!) as! NSDictionary
