@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ViewController: UIViewController {
     // var endpoint = "http://api.nhk.or.jp/v2/pg/list/{area}/{service}/{date}.json?key={apikey}"
@@ -16,14 +17,30 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         APIClient.programEntities(
-            strDate: "2017-06-30",
+            strDate: "2017-07-01",
             completionHandler: { data, response, error in
                 do {
                     let json = try JSONSerialization.jsonObject(with: data!) as! NSDictionary
                     let list = json["list"] as! NSDictionary
                     let programList = ProgramListEntity.from(list)
                     let programs = (programList?.programs)!
-                    print(programs.first?.title)
+                    
+                    
+                    let config = Realm.Configuration(schemaVersion: 1)
+                    Realm.Configuration.defaultConfiguration = config
+                    
+                    let program = Program()
+                    program.id = (programs.first?.id)!
+                    program.title = (programs.first?.title)!
+                    
+                    let realm = try! Realm()
+                    try! realm.write {
+                        realm.add(program, update: true)
+                    }
+                    
+                    let realmPrograms = realm.objects(Program.self)
+                    
+                    print(realmPrograms.first?.title)
                 } catch {}
             }
         )
