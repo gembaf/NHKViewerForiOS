@@ -13,6 +13,7 @@
 		44D2C2961F0624B30038F615 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D2C2951F0624B30038F615 /* RealmSwift.framework */; };
 		44D2C2971F0625090038F615 /* Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D665481EE63E4100C4F2DB /* Mapper.framework */; };
 		44D2C2991F0627350038F615 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D2C2981F0627350038F615 /* Program.swift */; };
+		44D2C29B1F0638F00038F615 /* ProgramStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D2C29A1F0638F00038F615 /* ProgramStore.swift */; };
 		44D665181EE529A100C4F2DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D665171EE529A100C4F2DB /* AppDelegate.swift */; };
 		44D6651A1EE529A100C4F2DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D665191EE529A100C4F2DB /* ViewController.swift */; };
 		44D6651D1EE529A100C4F2DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D6651B1EE529A100C4F2DB /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		44D2C2931F06249E0038F615 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		44D2C2951F0624B30038F615 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		44D2C2981F0627350038F615 /* Program.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		44D2C29A1F0638F00038F615 /* ProgramStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramStore.swift; sourceTree = "<group>"; };
 		44D665141EE529A100C4F2DB /* NHKViewerForiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHKViewerForiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D665171EE529A100C4F2DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44D665191EE529A100C4F2DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				44767C6D1EF10C40001A5696 /* ProgramListEntity.swift */,
 				44767C6F1EF11F55001A5696 /* APIClient.swift */,
 				44D2C2981F0627350038F615 /* Program.swift */,
+				44D2C29A1F0638F00038F615 /* ProgramStore.swift */,
 			);
 			path = NHKViewerForiOS;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				44D6654C1EE6409000C4F2DB /* ProgramEntity.swift in Sources */,
 				44767C701EF11F55001A5696 /* APIClient.swift in Sources */,
 				44767C6E1EF10C40001A5696 /* ProgramListEntity.swift in Sources */,
+				44D2C29B1F0638F00038F615 /* ProgramStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

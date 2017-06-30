@@ -25,20 +25,8 @@ class ViewController: UIViewController {
                     let programList = ProgramListEntity.from(list)
                     let programs = (programList?.programs)!
                     
-                    
-                    let config = Realm.Configuration(schemaVersion: 1)
-                    Realm.Configuration.defaultConfiguration = config
-                    
-                    let program = Program()
-                    program.id = (programs.first?.id)!
-                    program.title = (programs.first?.title)!
-                    
-                    let realm = try! Realm()
-                    try! realm.write {
-                        realm.add(program, update: true)
-                    }
-                    
-                    let realmPrograms = realm.objects(Program.self)
+                    ProgramStore().addOrUpdate(program: programs.first!)
+                    let realmPrograms = ProgramStore().all()
                     
                     print(realmPrograms.first?.title)
                 } catch {}
