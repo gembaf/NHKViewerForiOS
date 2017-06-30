@@ -29,6 +29,12 @@ class ProgramStore {
         }
     }
     
+    func addOrUpdate(programs: [ProgramEntity]) {
+        for program in programs {
+            addOrUpdate(program: program)
+        }
+    }
+    
     private func convertToRealmObjects(entity: ProgramEntity) -> Program {
         let program = Program()
         

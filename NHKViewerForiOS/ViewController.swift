@@ -25,10 +25,11 @@ class ViewController: UIViewController {
                     let programList = ProgramListEntity.from(list)
                     let programs = (programList?.programs)!
                     
-                    ProgramStore().addOrUpdate(program: programs.first!)
+                    ProgramStore().addOrUpdate(programs: programs)
                     let realmPrograms = ProgramStore().all()
                     
-                    print(realmPrograms.first?.title)
+                    print(realmPrograms.last?.title)
+                    print(realmPrograms.count)
                 } catch {}
             }
         )
