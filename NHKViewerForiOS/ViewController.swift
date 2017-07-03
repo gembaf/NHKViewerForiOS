@@ -18,6 +18,12 @@ class ViewController: UIViewController {
         
         // fetchProgramEntities(strDate: "2017-07-01")
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let storyboard = UIStoryboard(name: "ProgramViewController", bundle: nil)
+        let nextView = storyboard.instantiateInitialViewController() as! ProgramViewController
+        self.present(nextView, animated: false, completion: nil)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
