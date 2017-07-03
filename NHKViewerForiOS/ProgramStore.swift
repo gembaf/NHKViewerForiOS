@@ -13,7 +13,7 @@ class ProgramStore {
     var realm: Realm?
     
     init() {
-        let config = Realm.Configuration(schemaVersion: 1)
+        let config = Realm.Configuration(schemaVersion: 3)
         Realm.Configuration.defaultConfiguration = config
         
         realm = try! Realm()
@@ -40,6 +40,11 @@ class ProgramStore {
         
         program.id = entity.id
         program.title = entity.title
+        program.subtitle = entity.subtitle
+        program.content = entity.content
+        program.act = entity.act
+        program.start_time = entity.start_time
+        program.end_time = entity.end_time
         return program
     }
 }

@@ -39,7 +39,7 @@ class ProgramViewController: UIViewController, UICollectionViewDataSource, UICol
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = UIScreen.main.bounds.width
-        let height = CGFloat(100)
+        let height = CGFloat(80)
         return CGSize(width: width, height: height)
     }
 }

@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        // fetchProgramEntities(strDate: "2017-07-01")
+        fetchProgramEntities(strDate: "2017-07-03")
     }
     
     override func viewDidAppear(_ animated: Bool) {
