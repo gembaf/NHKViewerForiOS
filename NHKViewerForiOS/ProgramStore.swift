@@ -25,7 +25,7 @@ class ProgramStore {
     
     func addOrUpdate(program: ProgramEntity) {
         try! realm?.write {
-            realm?.add(convertToRealmObjects(entity: program), update: true)
+            realm?.add(program.toRealmObject(), update: true)
         }
     }
     
@@ -33,18 +33,5 @@ class ProgramStore {
         for program in programs {
             addOrUpdate(program: program)
         }
-    }
-    
-    private func convertToRealmObjects(entity: ProgramEntity) -> Program {
-        let program = Program()
-        
-        program.id = entity.id
-        program.title = entity.title
-        program.subtitle = entity.subtitle
-        program.content = entity.content
-        program.act = entity.act
-        program.start_time = entity.start_time
-        program.end_time = entity.end_time
-        return program
     }
 }

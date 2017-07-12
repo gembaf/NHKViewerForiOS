@@ -37,4 +37,18 @@ struct ProgramEntity: Mappable {
         try self.start_time = map.from("start_time", transformation: extractDate)
         try self.end_time = map.from("end_time", transformation: extractDate)
     }
+    
+    func toRealmObject() -> Program {
+        let program = Program()
+        
+        program.id = self.id
+        program.title = self.title
+        program.subtitle = self.subtitle
+        program.content = self.content
+        program.act = self.act
+        program.start_time = self.start_time
+        program.end_time = self.end_time
+
+        return program
+    }
 }
