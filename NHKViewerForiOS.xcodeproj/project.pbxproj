@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		44767C6E1EF10C40001A5696 /* ProgramListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44767C6D1EF10C40001A5696 /* ProgramListEntity.swift */; };
 		44767C701EF11F55001A5696 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44767C6F1EF11F55001A5696 /* APIClient.swift */; };
+		44ADF3021F09EB1B00E775F4 /* ProgramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ADF3011F09EB1B00E775F4 /* ProgramCell.swift */; };
 		44D2C2941F06249E0038F615 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D2C2931F06249E0038F615 /* Realm.framework */; };
 		44D2C2961F0624B30038F615 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D2C2951F0624B30038F615 /* RealmSwift.framework */; };
 		44D2C2971F0625090038F615 /* Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D665481EE63E4100C4F2DB /* Mapper.framework */; };
 		44D2C2991F0627350038F615 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D2C2981F0627350038F615 /* Program.swift */; };
 		44D2C29B1F0638F00038F615 /* ProgramStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D2C29A1F0638F00038F615 /* ProgramStore.swift */; };
+		44D2C29D1F064B870038F615 /* ProgramViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D2C29C1F064B870038F615 /* ProgramViewController.storyboard */; };
+		44D2C29F1F064C1A0038F615 /* ProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D2C29E1F064C1A0038F615 /* ProgramViewController.swift */; };
 		44D665181EE529A100C4F2DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D665171EE529A100C4F2DB /* AppDelegate.swift */; };
 		44D6651A1EE529A100C4F2DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D665191EE529A100C4F2DB /* ViewController.swift */; };
 		44D6651D1EE529A100C4F2DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D6651B1EE529A100C4F2DB /* Main.storyboard */; };
 		44D6651F1EE529A100C4F2DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D6651E1EE529A100C4F2DB /* Assets.xcassets */; };
-		44D665221EE529A100C4F2DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D665201EE529A100C4F2DB /* LaunchScreen.storyboard */; };
 		44D6652D1EE529A100C4F2DB /* NHKViewerForiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D6652C1EE529A100C4F2DB /* NHKViewerForiOSTests.swift */; };
 		44D665381EE529A100C4F2DB /* NHKViewerForiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D665371EE529A100C4F2DB /* NHKViewerForiOSUITests.swift */; };
 		44D665461EE558FF00C4F2DB /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44D665451EE558FF00C4F2DB /* Keys.plist */; };
@@ -45,16 +47,18 @@
 /* Begin PBXFileReference section */
 		44767C6D1EF10C40001A5696 /* ProgramListEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramListEntity.swift; sourceTree = "<group>"; };
 		44767C6F1EF11F55001A5696 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		44ADF3011F09EB1B00E775F4 /* ProgramCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramCell.swift; sourceTree = "<group>"; };
 		44D2C2931F06249E0038F615 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		44D2C2951F0624B30038F615 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		44D2C2981F0627350038F615 /* Program.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
 		44D2C29A1F0638F00038F615 /* ProgramStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramStore.swift; sourceTree = "<group>"; };
+		44D2C29C1F064B870038F615 /* ProgramViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProgramViewController.storyboard; sourceTree = "<group>"; };
+		44D2C29E1F064C1A0038F615 /* ProgramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramViewController.swift; sourceTree = "<group>"; };
 		44D665141EE529A100C4F2DB /* NHKViewerForiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHKViewerForiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D665171EE529A100C4F2DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44D665191EE529A100C4F2DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		44D6651C1EE529A100C4F2DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44D6651E1EE529A100C4F2DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		44D665211EE529A100C4F2DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44D665231EE529A100C4F2DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44D665281EE529A100C4F2DB /* NHKViewerForiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NHKViewerForiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D6652C1EE529A100C4F2DB /* NHKViewerForiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHKViewerForiOSTests.swift; sourceTree = "<group>"; };
@@ -124,7 +128,6 @@
 				44D665191EE529A100C4F2DB /* ViewController.swift */,
 				44D6651B1EE529A100C4F2DB /* Main.storyboard */,
 				44D6651E1EE529A100C4F2DB /* Assets.xcassets */,
-				44D665201EE529A100C4F2DB /* LaunchScreen.storyboard */,
 				44D665231EE529A100C4F2DB /* Info.plist */,
 				44D665451EE558FF00C4F2DB /* Keys.plist */,
 				44D6654B1EE6409000C4F2DB /* ProgramEntity.swift */,
@@ -132,6 +135,9 @@
 				44767C6F1EF11F55001A5696 /* APIClient.swift */,
 				44D2C2981F0627350038F615 /* Program.swift */,
 				44D2C29A1F0638F00038F615 /* ProgramStore.swift */,
+				44D2C29C1F064B870038F615 /* ProgramViewController.storyboard */,
+				44D2C29E1F064C1A0038F615 /* ProgramViewController.swift */,
+				44ADF3011F09EB1B00E775F4 /* ProgramCell.swift */,
 			);
 			path = NHKViewerForiOS;
 			sourceTree = "<group>";
@@ -273,8 +279,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D2C29D1F064B870038F615 /* ProgramViewController.storyboard in Resources */,
 				44D665461EE558FF00C4F2DB /* Keys.plist in Resources */,
-				44D665221EE529A100C4F2DB /* LaunchScreen.storyboard in Resources */,
 				44D6651F1EE529A100C4F2DB /* Assets.xcassets in Resources */,
 				44D6651D1EE529A100C4F2DB /* Main.storyboard in Resources */,
 			);
@@ -324,7 +330,9 @@
 				44D665181EE529A100C4F2DB /* AppDelegate.swift in Sources */,
 				44D2C2991F0627350038F615 /* Program.swift in Sources */,
 				44D6654C1EE6409000C4F2DB /* ProgramEntity.swift in Sources */,
+				44ADF3021F09EB1B00E775F4 /* ProgramCell.swift in Sources */,
 				44767C701EF11F55001A5696 /* APIClient.swift in Sources */,
+				44D2C29F1F064C1A0038F615 /* ProgramViewController.swift in Sources */,
 				44767C6E1EF10C40001A5696 /* ProgramListEntity.swift in Sources */,
 				44D2C29B1F0638F00038F615 /* ProgramStore.swift in Sources */,
 			);
@@ -368,14 +376,6 @@
 				44D6651C1EE529A100C4F2DB /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		44D665201EE529A100C4F2DB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44D665211EE529A100C4F2DB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

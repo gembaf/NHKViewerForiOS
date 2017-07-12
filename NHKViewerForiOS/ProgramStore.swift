@@ -13,7 +13,7 @@ class ProgramStore {
     var realm: Realm?
     
     init() {
-        let config = Realm.Configuration(schemaVersion: 1)
+        let config = Realm.Configuration(schemaVersion: 3)
         Realm.Configuration.defaultConfiguration = config
         
         realm = try! Realm()
@@ -25,7 +25,7 @@ class ProgramStore {
     
     func addOrUpdate(program: ProgramEntity) {
         try! realm?.write {
-            realm?.add(convertToRealmObjects(entity: program), update: true)
+            realm?.add(program.toRealmObject(), update: true)
         }
     }
     
@@ -33,13 +33,5 @@ class ProgramStore {
         for program in programs {
             addOrUpdate(program: program)
         }
-    }
-    
-    private func convertToRealmObjects(entity: ProgramEntity) -> Program {
-        let program = Program()
-        
-        program.id = entity.id
-        program.title = entity.title
-        return program
     }
 }

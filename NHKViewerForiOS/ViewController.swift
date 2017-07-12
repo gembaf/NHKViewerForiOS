@@ -16,8 +16,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        fetchProgramEntities(strDate: "2017-07-12")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let storyboard = UIStoryboard(name: "ProgramViewController", bundle: nil)
+        let nextView = storyboard.instantiateInitialViewController() as! ProgramViewController
+        self.present(nextView, animated: false, completion: nil)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    private func fetchProgramEntities(strDate: String) {
         APIClient.programEntities(
-            strDate: "2017-07-01",
+            strDate: strDate,
             completionHandler: { data, response, error in
                 do {
                     let json = try JSONSerialization.jsonObject(with: data!) as! NSDictionary
@@ -26,18 +41,9 @@ class ViewController: UIViewController {
                     let programs = (programList?.programs)!
                     
                     ProgramStore().addOrUpdate(programs: programs)
-                    let realmPrograms = ProgramStore().all()
-                    
-                    print(realmPrograms.last?.title)
-                    print(realmPrograms.count)
                 } catch {}
             }
         )
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
 
