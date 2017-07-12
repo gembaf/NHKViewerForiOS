@@ -1,5 +1,5 @@
 //
-//  ProgramDetailViewController.swift
+//  ProgramDetailTableViewController.swift
 //  NHKViewerForiOS
 //
 //  Created by fumiya.gemba on 2017/07/12.
@@ -8,16 +8,15 @@
 
 import UIKit
 
-class ProgramDetailViewController: UIViewController {
+class ProgramDetailTableViewController: UITableViewController {
     public var program: Program!
-
+    
+    @IBOutlet weak var titleLabel: UILabel!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! ProgramDetailTableViewController
-        vc.setProgram(program: program)
+        
+        titleLabel.text = program.title
     }
     
     public func setProgram(program: Program) {

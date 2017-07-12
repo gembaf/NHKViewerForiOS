@@ -39,6 +39,13 @@ extension ProgramViewController: UICollectionViewDataSource {
 }
 
 extension ProgramViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "ProgramDetailViewController", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController() as! ProgramDetailViewController
+        
+        vc.setProgram(program: programs[indexPath.row])
+        self.present(vc, animated: false, completion: nil)
+    }
 }
 
 extension ProgramViewController: UICollectionViewDelegateFlowLayout {
