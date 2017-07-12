@@ -44,7 +44,7 @@ extension ProgramViewController: UICollectionViewDelegate {
         let vc = storyboard.instantiateInitialViewController() as! ProgramDetailViewController
         
         vc.setProgram(program: programs[indexPath.row])
-        self.present(vc, animated: false, completion: nil)
+        self.present(vc, animated: true, completion: nil)
     }
 }
 

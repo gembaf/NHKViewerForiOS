@@ -23,5 +23,9 @@ class ProgramDetailViewController: UIViewController {
     public func setProgram(program: Program) {
         self.program = program
     }
+    
+    @IBAction func clickBackButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 

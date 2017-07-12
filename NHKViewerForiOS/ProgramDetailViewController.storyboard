@@ -30,6 +30,16 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4b-46-57B">
+                                        <rect key="frame" x="15" y="15" width="50" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Tko-WV-loG"/>
+                                        </constraints>
+                                        <state key="normal" title="戻る"/>
+                                        <connections>
+                                            <action selector="clickBackButton:" destination="oV2-EB-uT3" eventType="touchUpInside" id="jIY-zh-ZXp"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -38,6 +48,8 @@
                                     <constraint firstItem="b2L-LQ-GvQ" firstAttribute="leading" secondItem="AHI-aJ-gMc" secondAttribute="leading" id="ZL5-8e-fXv"/>
                                     <constraint firstAttribute="bottom" secondItem="b2L-LQ-GvQ" secondAttribute="bottom" id="bte-EM-ZRU"/>
                                     <constraint firstAttribute="height" constant="60" id="iTT-iG-sYJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="f4b-46-57B" secondAttribute="bottom" constant="15" id="nXC-EJ-Lwb"/>
+                                    <constraint firstItem="f4b-46-57B" firstAttribute="leading" secondItem="AHI-aJ-gMc" secondAttribute="leading" constant="15" id="nlA-eN-L9e"/>
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpB-3y-8rF">
