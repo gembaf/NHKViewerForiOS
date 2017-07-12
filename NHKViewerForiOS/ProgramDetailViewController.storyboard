@@ -110,6 +110,84 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="内容" id="lho-ZF-axF" userLabel="内容">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="awa-su-C8H">
+                                        <rect key="frame" x="0.0" y="100" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="awa-su-C8H" id="Gbv-ZP-ajv">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="content" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5C-1I-nrD">
+                                                    <rect key="frame" x="20" y="0.0" width="335" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Y5C-1I-nrD" firstAttribute="top" secondItem="Gbv-ZP-ajv" secondAttribute="top" id="6qv-Cr-2dg"/>
+                                                <constraint firstItem="Y5C-1I-nrD" firstAttribute="leading" secondItem="Gbv-ZP-ajv" secondAttribute="leading" constant="20" id="CJo-Rd-v2w"/>
+                                                <constraint firstAttribute="trailing" secondItem="Y5C-1I-nrD" secondAttribute="trailing" constant="20" id="aLf-gF-RP8"/>
+                                                <constraint firstAttribute="bottom" secondItem="Y5C-1I-nrD" secondAttribute="bottom" id="eas-sT-qX7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="出演者" id="GJM-C7-Kcj">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Jss-G8-uYM">
+                                        <rect key="frame" x="0.0" y="172" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jss-G8-uYM" id="6KP-Zn-TJ6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="act" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2P2-H4-0ze" userLabel="act">
+                                                    <rect key="frame" x="20" y="0.0" width="335" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="2P2-H4-0ze" secondAttribute="bottom" id="1D9-Wi-Y2n"/>
+                                                <constraint firstItem="2P2-H4-0ze" firstAttribute="leading" secondItem="6KP-Zn-TJ6" secondAttribute="leading" constant="20" id="CCd-qq-mB8"/>
+                                                <constraint firstAttribute="trailing" secondItem="2P2-H4-0ze" secondAttribute="trailing" constant="20" id="We4-UY-nZ5"/>
+                                                <constraint firstItem="2P2-H4-0ze" firstAttribute="top" secondItem="6KP-Zn-TJ6" secondAttribute="top" id="XFe-sw-1CT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="放送時刻" id="wZx-FI-uM3" userLabel="放送時刻">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="LdO-QV-Uh5">
+                                        <rect key="frame" x="0.0" y="244" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LdO-QV-Uh5" id="j2n-zZ-q0a">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KJ-1M-M5V" userLabel="time">
+                                                    <rect key="frame" x="20" y="0.0" width="335" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6KJ-1M-M5V" firstAttribute="leading" secondItem="j2n-zZ-q0a" secondAttribute="leading" constant="20" id="A85-hB-5be"/>
+                                                <constraint firstAttribute="bottom" secondItem="6KJ-1M-M5V" secondAttribute="bottom" id="jwU-7m-ZTW"/>
+                                                <constraint firstAttribute="trailing" secondItem="6KJ-1M-M5V" secondAttribute="trailing" constant="20" id="ouI-Pv-72N"/>
+                                                <constraint firstItem="6KJ-1M-M5V" firstAttribute="top" secondItem="j2n-zZ-q0a" secondAttribute="top" id="wF5-Sn-c2K"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="uXK-2b-hAK" id="meb-2Z-5v1"/>
@@ -117,6 +195,9 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="actLabel" destination="2P2-H4-0ze" id="Ftc-V2-VB6"/>
+                        <outlet property="contentLabel" destination="Y5C-1I-nrD" id="3rN-vf-liG"/>
+                        <outlet property="timeLabel" destination="6KJ-1M-M5V" id="ira-rs-tIC"/>
                         <outlet property="titleLabel" destination="yBW-XP-be4" id="KIK-YY-pXb"/>
                     </connections>
                 </tableViewController>

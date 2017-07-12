@@ -12,11 +12,17 @@ class ProgramDetailTableViewController: UITableViewController {
     public var program: Program!
     
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var contentLabel: UILabel!
+    @IBOutlet weak var actLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
   
     override func viewDidLoad() {
         super.viewDidLoad()
         
         titleLabel.text = program.title
+        contentLabel.text = program.content
+        actLabel.text = program.act
+        timeLabel.text = program.formatTime()
     }
     
     public func setProgram(program: Program) {
