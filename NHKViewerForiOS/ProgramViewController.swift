@@ -9,11 +9,11 @@
 import UIKit
 import RealmSwift
 
-class ProgramViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class ProgramViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    private var programs: Results<Program>!
+    fileprivate var programs: Results<Program>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +23,9 @@ class ProgramViewController: UIViewController, UICollectionViewDataSource, UICol
         collectionView.dataSource = self
         collectionView.delegate = self
     }
-    
-    //--- datasource
-    
+}
+
+extension ProgramViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return programs.count
     }
@@ -36,7 +36,19 @@ class ProgramViewController: UIViewController, UICollectionViewDataSource, UICol
         cell.setData(program: programs[indexPath.row])
         return cell
     }
-    
+}
+
+extension ProgramViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "ProgramDetailViewController", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController() as! ProgramDetailViewController
+        
+        vc.setProgram(program: programs[indexPath.row])
+        self.present(vc, animated: true, completion: nil)
+    }
+}
+
+extension ProgramViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = UIScreen.main.bounds.width
         let height = CGFloat(80)

@@ -21,4 +21,11 @@ public class Program: Object {
     override public static func primaryKey() -> String {
         return "id"
     }
+    
+    public func formatTime() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        
+        return formatter.string(from: start_time) + "〜" + formatter.string(from: end_time)
+    }
 }
