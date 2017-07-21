@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         // fetchProgramEntities(strDate: "2017-07-12")
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    @IBAction func onFetch(_ sender: Any) {
         let storyboard = UIStoryboard(name: "ProgramViewController", bundle: nil)
         let nextView = storyboard.instantiateInitialViewController() as! ProgramViewController
         self.present(nextView, animated: false, completion: nil)
