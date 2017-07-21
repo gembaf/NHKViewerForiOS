@@ -14,12 +14,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var dateListPickerView: UIPickerView!
     
-    fileprivate var dateList = ["2017-07-21", "2017-07-22", "2017-07-23", "2017-07-24", "2017-07-25", "2017-07-26", "2017-07-27"]
+    fileprivate var dateList: [String] = []
     fileprivate var selectedDate = ""
                     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        createDateList()
         
         dateListPickerView.dataSource = self
         dateListPickerView.delegate = self
@@ -52,6 +54,19 @@ class ViewController: UIViewController {
                 } catch {}
             }
         )
+    }
+    
+    private func createDateList() {
+        let now = Date()
+        let days = 7
+        let formatter = DateFormatter()
+        
+        formatter.dateFormat = "yyyy-MM-dd"
+        
+        for i in 0..<days {
+            let date = Date.init(timeInterval: TimeInterval(60*60*24*i), since: now)
+            dateList.append(formatter.string(from: date))
+        }
     }
 }
 
